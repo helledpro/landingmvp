@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
 $config = require __DIR__ . '/config.php';
-function respond($success, $message, $code = 200) { http_response_code($code); echo json_encode(['success'=>$success,'message'=>$message], JSON_UNESCAPED_UNICODE); exit; }
+function respond($ok, $message, $code = 200) { http_response_code($code); echo json_encode(['ok'=>$ok,'message'=>$message], JSON_UNESCAPED_UNICODE); exit; }
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') respond(false, 'Метод не поддерживается.', 405);
 if (!empty($_POST['website'])) respond(false, 'Заявка отклонена.', 400);
 $name = trim($_POST['name'] ?? '');
@@ -30,7 +30,7 @@ $body = "Новая заявка с сайта {$config['site_name']}\n\n".
 $headers = [];
 $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-Type: text/plain; charset=UTF-8';
-$headers[] = 'From: '.$config['site_name'].' <'.$config['sender_email'].'>';
+$headers[] = 'From: '.$config['site_name'].' <'.$config['from_email'].'>';
 if ($email !== '') $headers[] = 'Reply-To: '.$email;
 $ok = mail($config['recipient_email'], '=?UTF-8?B?'.base64_encode($subject).'?=', $body, implode("\r\n", $headers));
 if (!$ok) respond(false, 'Сервер не смог отправить письмо. Проверьте настройки mail() на хостинге.', 500);
