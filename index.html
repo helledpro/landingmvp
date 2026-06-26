@@ -3,53 +3,71 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Пульс — AI-контроль качества звонков для клиник</title>
-  <meta name="description" content="AI-контроль качества звонков и маркетинга для клиник: потерянные лиды, задачи, отчёты и выручка в одном окне.">
+  <title>МедПоток — маркетинг для стоматологий и поток заявок</title>
+  <meta name="description" content="МедПоток запускает посадочные страницы, Яндекс Директ, VK Рекламу, аналитику заявок и понятную отчетность для стоматологий.">
+  <meta property="og:title" content="МедПоток — увеличим поток заявок в вашу стоматологию">
+  <meta property="og:description" content="Посадочные страницы, Яндекс Директ, VK Реклама и отчетность для собственника клиники без лишних дашбордов.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
   <div class="container header-inner">
-    <a class="logo" href="#top" aria-label="Пульс"><span class="pulse-line"></span><span><b>Пульс</b><small>держит руку на пульсе клиники</small></span></a>
-    <nav class="nav" id="nav">
-      <a href="#work">Как это работает</a><a href="#features">Возможности</a><a href="#audience">Для кого</a><a href="#cases">Кейсы</a><a href="#pricing">Тарифы</a><a href="#contacts">Контакты</a>
+    <a class="logo" href="#top" aria-label="МедПоток"><span class="logo-mark">+</span><span><b>МедПоток</b><small>маркетинг для стоматологий</small></span></a>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a href="#services">Услуги</a><a href="#case">Кейсы</a><a href="#month-two">Как работаем</a><a href="#pricing">Тарифы</a><a href="#contacts">Контакты</a>
     </nav>
-    <button class="btn btn-primary js-open-modal">Запросить демо</button>
-    <button class="burger" id="burger" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    <a class="btn btn-primary header-cta" href="#forecast">Получить прогноз заявок</a>
+    <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
 <main id="top">
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <h1>AI-контроль качества звонков и маркетинга для клиник</h1>
-      <p class="lead">Пульс помогает клиникам видеть потерянных лидов, контролировать качество работы администраторов и держать руку на пульсе выручки.</p>
-      <div class="hero-actions"><button class="btn btn-primary js-open-modal">Получить демо</button><a class="btn btn-ghost" href="#dashboard"><span>▷</span> Посмотреть отчёт</a></div>
-      <div class="mini-features">
-        <div><i>〽</i><b>Потерянные лиды</b><span>Находим упущенные записи и деньги</span></div>
-        <div><i>♙</i><b>Оценка администраторов</b><span>Объективная оценка каждого разговора</span></div>
-        <div><i>₽</i><b>Выручка под риском</b><span>Показываем, сколько вы теряете</span></div>
-        <div><i>☑</i><b>Задачи на перезвон</b><span>Автоматически ставим задачи команде</span></div>
+  <section class="hero section-pad">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Performance-маркетинг для стоматологий</span>
+        <h1>Увеличим поток заявок в вашу стоматологию</h1>
+        <p class="lead">Запускаем посадочные страницы, Яндекс Директ и VK Рекламу, чтобы клиника получала обращения по приоритетным услугам и видела понятную отчетность.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#forecast">Получить прогноз заявок для клиники</a><a class="btn btn-secondary" href="#case">Посмотреть кейс</a></div>
+        <p class="trust-note">Работаем не на клики, а на понятный поток обращений: сколько вложили, сколько заявок получили и что улучшить дальше.</p>
+      </div>
+      <div class="marketing-collage" aria-label="Маркетинговый коллаж МедПоток">
+        <div class="landing-preview">
+          <div class="preview-top"><span></span><span></span><span></span></div>
+          <div class="tooth-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M20 7c5 0 8 4 12 4s7-4 12-4c9 0 15 8 12 20-2 8-5 12-7 22-1 5-4 8-8 8-5 0-4-11-9-11s-4 11-9 11c-4 0-7-3-8-8-2-10-5-14-7-22C5 15 11 7 20 7z"/></svg></div>
+          <h3>Имплантация зубов</h3><p>Квиз-посадочная с оффером, преимуществами клиники и формами заявки.</p><div class="preview-lines"><i></i><i></i><i></i></div><button>Записаться на консультацию</button>
+        </div>
+        <div class="specialist-card"><div class="avatar"><span></span></div><b>Проект ведет профильный специалист</b><small>Реклама, посадочная, заявки и отчет — в одной ответственности.</small></div>
+        <div class="metric-card m1"><b>25</b><span>заявок за 1 месяц</span></div>
+        <div class="metric-card m2"><b>75 902 ₽</b><span>бюджет</span></div>
+        <div class="metric-card m3"><b>28,35 ₽</b><span>средняя цена клика</span></div>
+        <div class="metric-card m4"><b>304 143</b><span>показа</span></div>
       </div>
     </div>
-    <div class="dashboard-shell" id="dashboard" aria-label="Дашборд Пульс">
-      <aside class="dash-sidebar"><div class="dash-logo"><span class="pulse-mini"></span>Пульс</div><a class="active">Главная</a><a>Звонки</a><a>Лиды</a><a>Администраторы</a><a>Маркетинг</a><a>Задачи</a><a>Отчёты</a><a>Настройки</a><div class="clinic">Клиника<br>“Дентал+”⌄</div></aside>
-      <div class="dash-main"><div class="dash-top"><h3>Главная</h3><div><button>12–18 мая 2025⌄</button><button>Все источники⌄</button></div></div>
-        <div class="stat-row"><div class="stat"><span>Потерянные лиды</span><b>24</b><em>−16% за неделю</em><svg viewBox="0 0 120 30"><polyline points="0,22 25,17 45,20 65,10 85,15 120,6"/></svg></div><div class="stat"><span>Записи</span><b>148</b><em class="good">+12%</em><svg viewBox="0 0 120 30"><polyline points="0,20 24,15 45,18 70,10 90,16 120,7"/></svg></div><div class="stat"><span>Обработано звонков</span><b>312</b><em class="good">+6%</em><svg viewBox="0 0 120 30"><polyline points="0,19 20,15 42,17 62,11 84,18 120,8"/></svg></div><div class="stat"><span>Выручка под риском</span><b>360 000 ₽</b><em>−27%</em><svg viewBox="0 0 120 30"><polyline points="0,9 25,12 48,7 70,17 95,19 120,23"/></svg></div></div>
-        <div class="dash-grid"><div class="panel chart"><h4>Динамика записей</h4><div class="chart-lines"></div></div><div class="panel admins"><h4>Оценка администраторов</h4><p>Анна Смирнова <span style="--w:92%"></span>92</p><p>Мария Иванова <span style="--w:78%"></span>78</p><p>Екатерина Петрова <span style="--w:65%"></span>65</p><p>Ольга Кузнецова <span style="--w:48%"></span>48</p></div><div class="panel table"><h4>Последние потерянные лиды</h4><p>Сегодня, 12:42 · Яндекс Директ · Не назначена запись · 15 000 ₽</p><p>Сегодня, 10:48 · Сайт · Долго отвечали · 9 000 ₽</p><p>Вчера, 17:31 · 2ГИС · Не закрыли на запись · 12 000 ₽</p></div><div class="panel tasks"><h4>Задачи на сегодня <mark>7</mark></h4><label><input type="checkbox"> Перезвонить лид с сайта <time>11:30</time></label><label><input type="checkbox"> Уточнить: не записался <time>13:00</time></label><label><input type="checkbox"> Перезвонить: Яндекс Директ <time>14:15</time></label></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="container problem-solution" id="features"><h2>Проблемы<br>клиник</h2><div class="cards pink"><article><i>⌘</i><h3>Лиды теряются</h3><p>Не все звонки обрабатываются, пациенты уходят к конкурентам.</p></article><article><i>〽</i><h3>Неясно, кто не записывает пациентов</h3><p>Субъективные оценки и отсутствие конкретных примеров.</p></article><article><i>⌘</i><h3>Реклама окупается, но звонки сливаются</h3><p>Бюджет тратится, а выручка не растёт.</p></article></div><h2 class="blue">Наше<br>решение</h2><div class="cards blue-c"><article><i>⌘</i><h3>AI-анализ разговоров</h3><p>Выявляем упущенные возможности и причины потерь.</p></article><article><i>♙</i><h3>Автоматические задачи</h3><p>Система ставит задачи на перезвон и контроль качества.</p></article><article><i>▣</i><h3>Дашборд по выручке и качеству</h3><p>Видите влияние качества звонков на выручку в реальном времени.</p></article></div></section>
-<section class="container" id="work"><h2 class="section-title">Как это работает</h2><div class="steps"><article><i>☁</i><em>01</em><h3>Загрузка звонков</h3><p>Подключаем телефонию и рекламные источники. Звонки загружаются автоматически.</p></article><article><i>〰</i><em>02</em><h3>Транскрибация</h3><p>Звонки превращаются в текст с разделением говорящих.</p></article><article><i>◈</i><em>03</em><h3>AI-анализ</h3><p>ИИ оценивает качество разговора, выявляет ошибки и упущенные записи.</p></article><article><i>☑</i><em>04</em><h3>Задачи и отчёты</h3><p>Система ставит задачи и показывает влияние на выручку.</p></article></div></section>
-<section class="container" id="audience"><h2 class="section-title">Для кого</h2><div class="audience"><article><i>♡</i><h3>Стоматологии</h3><p>Контроль записи на приём, консультации, имплантацию, ортодонтию и др. услуги.</p></article><article><i>⊕</i><h3>Многопрофильные клиники</h3><p>Анализ звонков по всем направлениям и отделениям. Единый стандарт сервиса.</p></article><article><i>⌘</i><h3>Сети клиник</h3><p>Контроль качества и выручки по всем филиалам в одном окне.</p></article></div></section>
-<section class="container metrics" id="cases"><article><i>↗</i><h3>+18%</h3><b>записей</b><p>Рост записей уже в первый месяц работы с Пульсом</p></article><article><i>↘</i><h3>−27%</h3><b>потерянных лидов</b><p>Снижение упущенных записей и потерянной выручки</p></article><article><i>ⓢ</i><h3>до 360 000 ₽</h3><b>сохранённой выручки</b><p>Дополнительная выручка за счёт контроля качества звонков</p></article><article><i>▭</i><h3>в 1 окне:</h3><b>звонки, анализ, задачи</b><p>Всё, что нужно руководителю для роста клиники</p></article></section>
-<section class="container" id="pricing"><h2 class="section-title">Тарифы</h2><div class="pricing"><article class="popular"><span>Популярный</span><h3>Пилот</h3><p>Запустите Пульс и увидите результат уже в первые дни.</p><h4>от 0 ₽ <small>14 дней бесплатно</small></h4><ul><li>Все возможности платформы</li><li>До 500 звонков</li><li>Подключение и настройка</li></ul><button class="btn btn-primary js-open-modal">Попробовать бесплатно</button></article><article><h3>Клиника</h3><p>Для одной клиники и стабильного роста.</p><h4>от 12 900 ₽ <small>/ мес.</small></h4><ul><li>Все возможности платформы</li><li>Неограниченное количество звонков</li><li>Приоритетная поддержка</li></ul><button class="btn btn-ghost js-open-modal">Запросить демо</button></article><article><h3>Сеть</h3><p>Для сетей клиник и мультифилиальных структур.</p><h4>Индивидуально</h4><ul><li>Все возможности платформы</li><li>Мультифилиальность</li><li>Персональный менеджер</li></ul><button class="btn btn-ghost js-open-modal">Запросить демо</button></article></div><p class="under-price">Нужен другой формат? Напишите нам — соберём решение под ваши задачи.</p></section>
-<section class="container cta"><div><span>Прозрачно. Быстро. Без обязательств.</span><h2>Покажем, где клиника теряет деньги<br>уже на первых звонках</h2></div><button class="btn btn-primary js-open-modal">Оставить заявку</button><small>Ответим в течение 15 минут</small></section>
+    <div class="container benefits"><div>10 лет в performance-маркетинге</div><div>Фокус на стоматологиях</div><div>Понятная отчетность для собственника</div><div>Контроль обращений и записей</div></div>
+  </section>
+
+  <section class="container section-pad" id="services"><span class="eyebrow">Что входит</span><h2 class="section-title">Полный запуск пациентского потока</h2><div class="card-grid four">
+    <article class="service-card"><i>LP</i><h3>Посадочная страница</h3><p>Создаем посадочную страницу или квиз под приоритетную услугу клиники. Упаковываем оффер, преимущества, формы заявки и аналитику.</p></article>
+    <article class="service-card"><i>Я</i><h3>Яндекс Директ</h3><p>Запускаем поиск, РСЯ и Мастер кампаний. Собираем семантику, пишем объявления, чистим площадки и управляем ставками.</p></article>
+    <article class="service-card"><i>VK</i><h3>VK Реклама</h3><p>Настраиваем рекламу во VK для заявок, прогрева аудитории, ретаргетинга и теста офферов.</p></article>
+    <article class="service-card"><i>↗</i><h3>Аналитика и отчеты</h3><p>Показываем не только клики и показы, а стоимость заявки, количество обращений и понятные выводы для собственника.</p></article>
+  </div></section>
+
+  <section class="case section-pad" id="case"><div class="container"><span class="eyebrow">Кейс</span><h2 class="section-title">Обезличенный кейс стоматологии</h2><p class="section-lead">Яндекс Директ + квиз-посадочная, первый месяц работы</p><div class="case-grid"><article class="case-work"><h3>Что сделали</h3><ul><li>провели анализ целевой аудитории и конкурентов;</li><li>собрали семантическое ядро;</li><li>распределили ключевые запросы по группам;</li><li>написали тексты объявлений и подготовили креативы;</li><li>разработали и внедрили квиз;</li><li>запустили кампании на Поиске и в сетях;</li><li>подключили Мастер кампаний;</li><li>чистили площадки и добавляли минус-слова.</li></ul></article><div class="case-results"><div>25 заявок <span>за 1 месяц</span></div><div>75 902 ₽ <span>рекламный бюджет</span></div><div>304 143 <span>показа</span></div><div>2 677 <span>переходов</span></div><div>28,35 ₽ <span>средняя цена клика</span></div><div>3 036 ₽ <span>средняя стоимость заявки</span></div></div></div><p class="case-summary">В первый месяц кампании проходили обучение и тест связок. Ко второй неделе количество обращений выросло, а стоимость лида снизилась. На третьей неделе подключили Мастер кампаний для масштабирования. Главный итог — собрали базу, нашли рабочие гипотезы и подготовили основу для снижения стоимости заявки во второй месяц.</p></div></section>
+
+  <section class="container section-pad" id="month-two"><span class="eyebrow">Что делаем во 2 месяц</span><h2 class="section-title">Усиливаем то, что уже дает обращения</h2><div class="card-grid four"><article><h3>Оптимизируем кампании</h3><p>Чистим неэффективные площадки, добавляем минус-слова и усиливаем рабочие объявления.</p></article><article><h3>Масштабируем успешные связки</h3><p>Перераспределяем бюджет в пользу объявлений и аудиторий, которые дают более целевые обращения.</p></article><article><h3>Работаем с отказниками</h3><p>Создаем спецпредложения и сценарии повторного касания для пациентов, которые сомневаются.</p></article><article><h3>Дорабатываем квиз-воронку</h3><p>Улучшаем экраны квиза, чтобы повысить процент заполнения контактных данных.</p></article></div></section>
+
+  <section class="container pulse-bonus"><div><span class="eyebrow light">Бонус</span><h2>Пульс бесплатно в рамках любой услуги</h2><p>В рекламе важно не только получить заявку, но и понять, что произошло дальше: пациент записался, отказался, не дозвонился или пропал после обращения. Поэтому в рамках любой услуги МедПоток мы бесплатно добавляем базовый контроль обращений через Пульс.</p><ul><li>фиксируем обращения после рекламы;</li><li>отмечаем пациентов, которые не записались;</li><li>показываем, кому стоит перезвонить;</li><li>добавляем выводы в ежемесячный отчет;</li><li>помогаем контролировать потери после рекламы.</li></ul><b>МедПоток приводит обращения. Пульс помогает не потерять их после заявки.</b></div></section>
+
+  <section class="container section-pad" id="pricing"><span class="eyebrow">Тарифы</span><h2 class="section-title">Выберите стартовую связку</h2><div class="pricing"><article><h3>VK</h3><div class="price">1 месяц — 40 000 ₽<small>Со 2 месяца — 30 000 ₽/мес</small><small>Рекламный бюджет: от 40 000 ₽/мес</small></div><ul><li>настройка VK;</li><li>сопровождение;</li><li>базовые креативы;</li><li>отчет по заявкам.</li></ul><a class="btn btn-secondary" href="#forecast">Обсудить тариф</a></article><article class="featured"><span>Оптимально</span><h3>Яндекс + посадочная</h3><div class="price">1 месяц — 50 000 ₽<small>Со 2 месяца — 30 000 ₽/мес</small><small>Рекламный бюджет: от 60 000 ₽/мес</small></div><ul><li>настройка Яндекс Директа;</li><li>посадочная страница или квиз;</li><li>семантика и объявления;</li><li>аналитика и отчет.</li></ul><a class="btn btn-primary" href="#forecast">Получить прогноз</a></article><article><h3>VK + Яндекс + посадочная</h3><div class="price">1 месяц — 80 000 ₽<small>Со 2 месяца — 50 000 ₽/мес</small><small>Рекламный бюджет: от 100 000 ₽/мес</small></div><ul><li>две рекламные площадки;</li><li>посадочная страница или квиз;</li><li>ретаргетинг;</li><li>аналитика и отчет по заявкам.</li></ul><a class="btn btn-secondary" href="#forecast">Обсудить тариф</a></article></div><p class="under-price">Минимально рекомендуемый период работы — 2 месяца. Стоимость указана без учета рекламного бюджета.</p></section>
+
+  <section class="container expert section-pad"><div class="expert-visual"><span>10</span><small>лет опыта</small></div><div><span class="eyebrow">Кто ведет проект</span><h2 class="section-title">С вами работает профильный специалист, а не потоковое агентство</h2><p class="section-lead">Упор на performance-маркетинг для стоматологий: запуск рекламы, упаковка посадочных страниц, аналитика заявок и понятное объяснение результата для собственника клиники.</p><div class="expert-tags"><b>10 лет опыта</b><b>Фокус на стоматологиях</b><b>Маркетинг + аналитика</b><b>Понятные отчеты</b></div></div></section>
+
+  <section class="forecast" id="forecast"><div class="container forecast-grid"><div><span class="eyebrow light">Финальный шаг</span><h2>Получите прогноз заявок для вашей клиники</h2><p>Сделаем короткий разбор: какие услуги лучше продвигать, с какой площадки начать, какой бюджет нужен и какие первые гипотезы протестировать.</p></div><form id="leadForm" class="lead-form"><input name="name" required placeholder="Имя"><input name="phone" required placeholder="Телефон"><input name="city" placeholder="Город"><input name="site" placeholder="Сайт клиники"><textarea name="comment" placeholder="Комментарий / задача"></textarea><input type="text" name="website" class="hp" tabindex="-1" autocomplete="off"><button class="btn btn-primary" type="submit">Получить прогноз заявок для клиники</button><div class="form-message" id="formMessage" role="status"></div></form></div></section>
 </main>
-<footer class="footer" id="contacts"><div class="container footer-grid"><div><a class="logo" href="#top"><span class="pulse-line"></span><span><b>Пульс</b></span></a><p>AI-контроль качества звонков и маркетинга для клиник.</p><p>© 2025 Пульс</p></div><div><h4>Продукт</h4><a href="#work">Как это работает</a><a href="#features">Возможности</a><a href="#pricing">Тарифы</a><a href="#dashboard">Интеграции</a></div><div><h4>Компания</h4><a href="#cases">Кейсы</a><a href="#contacts">Контакты</a><a href="privacy.html">Политика конфиденциальности</a><a href="privacy.html">Пользовательское соглашение</a></div><div><h4>Контакты</h4><a href="tel:+78001234567">☎ 8 (800) 123-45-67</a><a href="mailto:hello@pulse.clinic">✉ hello@pulse.clinic</a><a href="#">✈ Telegram-канал</a></div></div></footer>
-<div class="modal" id="modal" aria-hidden="true"><div class="modal-card"><button class="modal-close" id="modalClose">×</button><h2>Получить демо</h2><p>Оставьте контакты — покажем, где клиника теряет деньги.</p><form id="leadForm"><input name="name" required placeholder="Имя *"><input name="phone" placeholder="Телефон"><input name="email" type="email" placeholder="Email"><input name="clinic" placeholder="Название клиники"><textarea name="comment" placeholder="Комментарий"></textarea><input type="text" name="website" class="hp" tabindex="-1" autocomplete="off"><label class="agree"><input type="checkbox" name="privacy" required> Согласен с <a href="privacy.html" target="_blank">политикой конфиденциальности</a></label><button class="btn btn-primary" type="submit">Отправить заявку</button><div class="form-message" id="formMessage"></div></form></div></div>
+<footer class="footer" id="contacts"><div class="container footer-grid"><div><a class="logo" href="#top"><span class="logo-mark">+</span><span><b>МедПоток</b><small>Маркетинг для стоматологий</small></span></a></div><nav><a href="#services">Услуги</a><a href="#case">Кейсы</a><a href="#pricing">Тарифы</a><a href="#contacts">Контакты</a></nav><div><h4>Контакты</h4><p>Телефон / WhatsApp / Telegram</p></div></div></footer>
 <script src="script.js"></script>
 </body>
 </html>
