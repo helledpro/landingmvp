@@ -1,3 +1,39 @@
-const burger=document.getElementById('burger'),nav=document.getElementById('nav');burger?.addEventListener('click',()=>nav.classList.toggle('open'));nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
-const modal=document.getElementById('modal'),closeBtn=document.getElementById('modalClose');document.querySelectorAll('.js-open-modal').forEach(b=>b.addEventListener('click',()=>{modal.classList.add('open');modal.setAttribute('aria-hidden','false')}));function closeModal(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true')}closeBtn?.addEventListener('click',closeModal);modal?.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
-const form=document.getElementById('leadForm'),msg=document.getElementById('formMessage');form?.addEventListener('submit',async e=>{e.preventDefault();msg.className='form-message';msg.textContent='Отправляем...';const fd=new FormData(form);if(!fd.get('phone')&&!fd.get('email')){msg.className='form-message error';msg.textContent='Укажите телефон или email.';return}try{const res=await fetch('send.php',{method:'POST',body:fd});const data=await res.json();if(data.ok){msg.className='form-message success';msg.textContent='Заявка отправлена. Мы свяжемся с вами в течение 15 минут.';form.reset()}else{msg.className='form-message error';msg.textContent=data.message||'Не удалось отправить заявку. Попробуйте позже.'}}catch(err){msg.className='form-message error';msg.textContent=location.protocol==='file:'?'Форма работает только на сервере с PHP. Загрузите сайт на хостинг.':'Ошибка соединения. Проверьте интернет или попробуйте позже.'}});
+const burger = document.getElementById('burger');
+const nav = document.getElementById('nav');
+
+burger?.addEventListener('click', () => {
+  const isOpen = nav.classList.toggle('open');
+  burger.setAttribute('aria-expanded', String(isOpen));
+});
+
+nav?.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    burger?.setAttribute('aria-expanded', 'false');
+  });
+});
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', (event) => {
+    const target = document.querySelector(anchor.getAttribute('href'));
+    if (!target) return;
+    event.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+const form = document.getElementById('leadForm');
+const message = document.getElementById('formMessage');
+
+form?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const data = new FormData(form);
+
+  if (data.get('website')) return;
+
+  // Здесь можно подключить реальную отправку заявки в Telegram/email:
+  // fetch('send.php', { method: 'POST', body: data }) или запрос к вашему API/webhook.
+  message.className = 'form-message success';
+  message.textContent = 'Спасибо! Заявка принята. Мы свяжемся с вами и подготовим прогноз для клиники.';
+  form.reset();
+});
