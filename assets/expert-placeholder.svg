@@ -1,0 +1,14 @@
+<svg width="520" height="620" viewBox="0 0 520 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Фото специалиста Эдмед</title>
+  <desc id="desc">Аккуратный placeholder для будущей фотографии профильного специалиста</desc>
+  <rect width="520" height="620" rx="42" fill="url(#bg)"/>
+  <circle cx="260" cy="190" r="76" fill="url(#face)"/>
+  <path d="M159 505C171 386 206 312 260 312C314 312 349 386 361 505H159Z" fill="#0B3153"/>
+  <path d="M192 505C204 411 229 352 260 352C291 352 316 411 328 505H192Z" fill="#F8FDFF" opacity="0.95"/>
+  <path d="M220 356L260 407L300 356" stroke="#35D5DF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="64" y="56" width="138" height="40" rx="20" fill="white" fill-opacity="0.8"/>
+  <path d="M84 77H112L125 61L143 91L156 72H181" stroke="#1098C8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="78" y="532" width="364" height="46" rx="23" fill="white" fill-opacity="0.86"/>
+  <text x="260" y="562" text-anchor="middle" fill="#08233F" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">профильный специалист Эдмед</text>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="520" y2="620" gradientUnits="userSpaceOnUse"><stop stop-color="#EFFCFF"/><stop offset="0.54" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4EFE8"/></linearGradient><linearGradient id="face" x1="184" y1="114" x2="336" y2="266" gradientUnits="userSpaceOnUse"><stop stop-color="#DCEBF2"/><stop offset="1" stop-color="#A9C3D1"/></linearGradient></defs>
+</svg>
